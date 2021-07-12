@@ -73,6 +73,7 @@ class NginxFull < Formula
       "headers-more" => "Build with Headers More support",
       "healthcheck" => "Build with Healthcheck support",
       "http-accounting" => "Build with HTTP Accounting support",
+      "http-concat" => "A Nginx module for concatenating files in a given context",
       "http-flood-detector" => "Build with Var Flood-Threshold support",
       "http-remote-passwd" => "Build with Remote Basic Auth Password support",
       "log-if" => "Build with Log-if support",
@@ -293,7 +294,7 @@ class NginxFull < Formula
 
     # Install LuaJit
     if build.with?("lua-module")
-      luajit_path = `/usr/local/bin/brew --prefix luajit`.chomp
+      luajit_path = `brew --prefix luajit`.chomp
       ENV["LUAJIT_LIB"] = "#{luajit_path}/lib"
       ENV["LUAJIT_INC"] = "#{luajit_path}/include/luajit-2.0"
     end
