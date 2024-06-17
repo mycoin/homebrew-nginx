@@ -1,11 +1,9 @@
 class NchanNginxModule < Formula
   desc "Fast, flexible pub/sub server"
   homepage "https://nchan.io"
-  url "https://github.com/slact/nchan/archive/v1.2.7.tar.gz"
-  sha256 "8bb5d1749af759bb5e9cc5476a9c4b44d51bee6096bb89ab5ff53e85367b490b"
-  head "https://github.com/slact/nchan.git"
-
-  bottle :unneeded
+  url "https://github.com/slact/nchan/archive/v1.3.6.tar.gz"
+  sha256 "ba0b7cc6b710a20ce1ed2554caf56154035291aaf115e407d7a6bb699fde42df"
+  head "https://github.com/slact/nchan.git", branch: "master"
 
   def install
     pkgshare.install Dir["*"]

@@ -1,10 +1,8 @@
 class VodNginxModule < Formula
   desc "DRM on the fly for video on demand"
   homepage "https://github.com/kaltura/nginx-vod-module"
-  url "https://github.com/kaltura/nginx-vod-module/archive/1.24.tar.gz"
-  sha256 "b3cad8e3047556955fa028bcc68e7af46d19343942cb7984ad25e6f44d614ddf"
-
-  bottle :unneeded
+  url "https://github.com/kaltura/nginx-vod-module/archive/1.31.tar.gz"
+  sha256 "ace04201cf2d2b1a3e5e732a22b92225b8ce61a494df9cc7f79d97efface8952"
 
   def install
     pkgshare.install Dir["*"]
