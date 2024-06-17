@@ -10,7 +10,7 @@ class OpenrestyDebug < Formula
   option "with-iconv", "Compile with ngx_http_iconv_module"
   option "with-slice", "Compile with ngx_http_slice_module"
 
-  depends_on "denji/nginx/openresty-openssl"
+  depends_on "mycoin/nginx/openresty-openssl"
   depends_on "geoip"
   depends_on "pcre"
   depends_on "postgresql" => :optional
@@ -23,9 +23,9 @@ class OpenrestyDebug < Formula
   def install
     # Configure
     cc_opt = "-I#{HOMEBREW_PREFIX}/include -I#{Formula["pcre"].opt_include}"
-    cc_opt += " -I#{Formula["denji/nginx/openresty-openssl"].opt_include}"
+    cc_opt += " -I#{Formula["mycoin/nginx/openresty-openssl"].opt_include}"
     ld_opt = "-L#{HOMEBREW_PREFIX}/lib -L#{Formula["pcre"].opt_lib}"
-    ld_opt += " -L#{Formula["denji/nginx/openresty-openssl"].opt_lib}"
+    ld_opt += " -L#{Formula["mycoin/nginx/openresty-openssl"].opt_lib}"
 
     args = ["-j#{ENV.make_jobs}",
             "--prefix=#{prefix}",
