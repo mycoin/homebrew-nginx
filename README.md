@@ -6,8 +6,8 @@ This tap is designed specifically for a custom build of NGINX with more module o
 Once the tap is installed, you can install `nginx-full`
 with optional [additional modules](https://denji.github.io/homebrew-nginx/#modules):
 
-    brew tap denji/nginx
-    brew install nginx-full --with-upload-module
+    brew tap mycoin/nginx
+    brew install nginx-full --with-http-concat-module --with-subs-filter-module
 
 For a list of available configuration options run:
 
