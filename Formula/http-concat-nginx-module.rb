@@ -5,9 +5,8 @@ class HttpConcatNginxModule < Formula
   version "1.2.3"
   sha256 "c3688cf698a4f879a703425d9628ecf01303c0255a436a5358d69fba4a173af4"
 
-  bottle :unneeded
-
   def install
     pkgshare.install Dir["*"]
   end
 end
+

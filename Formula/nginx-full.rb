@@ -96,6 +96,7 @@ class NginxFull < Formula
       "http-accounting"     => "Build with HTTP Accounting support",
       "http-flood-detector" => "Build with Var Flood-Threshold support",
       "http-remote-passwd"  => "Build with Remote Basic Auth Password support",
+      "http-concat"         => "Build with module for concatenating files in a given context",
       "log-if"              => "Build with Log-if support",
       "lua"                 => "Build with LUA support",
       "mod-zip"             => "Build with HTTP Zip support",
